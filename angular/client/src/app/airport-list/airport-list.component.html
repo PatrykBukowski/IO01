@@ -1,0 +1,27 @@
+<h1>Car List</h1>
+<table border="1">
+  <tr>
+    <td>Nazwa lotniska</td>
+    <td>Ilość miejs na lotnisku</td>
+    <td>Długość geograficzna</td>
+    <td>Szerokość geograficzna</td>
+  </tr>
+  <tr *ngFor="let airport of airports">
+    <td>{{airport.name}}</td>
+    <td>{{airport.value}}</td>
+    <td>{{airport.gHeight.toString()}}</td>
+    <td>{{airport.gWidth.toString()}}</td>
+  </tr>
+</table>
+
+<ul *ngFor="let plane of planes">
+  <li>
+    {{plane.id.toString()}}
+  </li>
+  <li>
+    {{plane.name}}
+  </li>
+  <li>{{plane.numberOfSeats.toString()}}</li>
+  <li>{{plane.maxDistance.toString()}}</li>
+  <li>{{plane.airlineModel}}</li>
+</ul>
